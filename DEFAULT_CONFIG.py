@@ -12,9 +12,9 @@ DEFAULT_CONFIG["total_conditioned_num"] = 2000
 DEFAULT_CONFIG["force_drop_steps"] = 180_000
 DEFAULT_CONFIG["lambda"] = 0.999
 DEFAULT_CONFIG["avg_threshold"] = 0.01
-DEFAULT_CONFIG["std_threshold"] = 0.03
+DEFAULT_CONFIG["std_threshold"] = 0.05
 
-DEFAULT_CONFIG["trainer_name"] = "MySAC(512,512,stable_policy_exp,discount=0.9,lambda=0.999,stdth=0.03)"
-DEFAULT_CONFIG["scheduling"] = "stable_policy_exp"  # vanilla
+DEFAULT_CONFIG["trainer_name"] = "MySAC(512,512,vanilla,TE=0.98)" #stable_policy_exp,discount=0.9,lambda=0.999,stdth=0.05)"
+DEFAULT_CONFIG["scheduling"] = "vanilla"  # vanilla
                                                     # stable_policy_exp
                                                     # piecewise
