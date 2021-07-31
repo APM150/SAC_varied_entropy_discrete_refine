@@ -59,7 +59,7 @@ def actor_critic_loss(
     }, [], None)
 
     alpha = torch.exp(model.log_alpha)
-    alpha = torch.clamp(alpha, min=0, max=1000)   # clip alpha
+    alpha = torch.clamp(alpha, min=0, max=10000)   # clip alpha
 
     # Discrete case.
     if model.discrete:
