@@ -1,3 +1,7 @@
 **/__pycache__
 *.pkl
 **/.idea
+
+**/plots
+**/rllib_experiments
+**/rllib_reward_plots
